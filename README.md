@@ -10,6 +10,8 @@
 
 ![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-home.png)
 
+# 注
+因为之前不清楚，上传了很多体积比较大的图片，这样会导致git仓库体积急剧增加，于是我删除了图片，并将commit置零。
 
 ## 致谢
 
