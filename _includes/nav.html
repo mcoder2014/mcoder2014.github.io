@@ -19,17 +19,24 @@
                     <li>
                         <a href="{{ site.baseurl }}/">Home</a>
                     </li>
+
+                    {% if site.csdn_username %}
                     <li>
-                        <a href="http://blog.csdn.net/jcq521045349">CSDN</a>
+                        <a href="http://blog.csdn.net/{{ site.csdn_username }}">CSDN</a>
                     </li>
+                    {% endif %}
+
                     <li>
                         <a href="http://mcoder.cc/DL-notes/">DL-Notes</a>
                     </li>
-                    {% for page in site.pages %}{% if page.title %}
+
+                    {% for page in site.pages %}
+                        {% if page.title %}
                     <li>
                         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                     </li>
-                    {% endif %}{% endfor %}
+                        {% endif %}
+                    {% endfor %}
                 </ul>
             </div>
         </div>

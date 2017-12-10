@@ -13,7 +13,7 @@ github_repo: "https://github.com/mcoder2014/mcoder2014.github.io" # you code rep
 sidebar: true                               # whether or not using Sidebar.
 sidebar-about-description: "同时是一个失去了梦想的摄影师"
 sidebar-avatar: /img/about.png    # use absolute URL, seeing it's used in both `/` and `/about/`
-
+sidebar-weixin: /img/qrcode_for_gh_a5dae253d93f_344.jpg    # weixin-public
 
 
 # SNS settings
@@ -89,8 +89,8 @@ friends: [
         href: "https://cghhu.cn"
     },
     {
-        title: "非池中物",
-        herf: "https://feichizhongwu.github.io"
+        title: "非池中物" ,
+        href: "https://feichizhongwu.github.io"
     }
 #   ,{
 #        title: "简书·BY",

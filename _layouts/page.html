@@ -198,11 +198,26 @@ layout: default
                             {% endif %}
 
                         </ul>
+
                         {% if site.email %}
-                            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i><strong>:{{site.email}}</strong></p>
+                            <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i><strong>{{ site.email }}</strong></p>
                         {% endif %}
+
                     </div>
                 </section>
+
+                <!-- Weixin -->
+                {% if site.sidebar-weixin %}
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="#">微信订阅号</a></h5>
+                    <div class="short-about">
+                        <img src="{{ site.sidebar-avatar }}"/>
+                    </div>
+                </section>
+                {% endif %}
+
+
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
