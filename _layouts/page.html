@@ -84,7 +84,7 @@ layout: default
                 <!-- Featured Tags -->
                 {% if site.featured-tags %}
                 <section>
-                    <hr class="hidden-sm hidden-xs">
+                    <hr class="visible-md visible-lg">
                     <h5><a href="{{'/tags/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
                     <div class="tags">
                         {% for tag in site.tags %}
@@ -209,14 +209,13 @@ layout: default
                 <!-- Weixin -->
                 {% if site.sidebar-weixin %}
                 <section>
-                    <hr class="hidden-sm hidden-xs">
+                    <hr class="visible-md visible-lg">
                     <h5><a href="#">微信订阅号</a></h5>
                     <div class="short-about">
                         <img src="{{ site.sidebar-weixin }}"/>
                     </div>
                 </section>
                 {% endif %}
-
 
                 <!-- Friends Blog -->
                 {% if site.friends %}
