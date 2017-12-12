@@ -1,17 +1,17 @@
 # Site settings
-title: 姜茶 Blog
-SEOTitle: 姜茶的博客 | Mcoder Blog
+title: 姜茶.Blog
+SEOTitle: 姜茶的博客 | Mcoder's Blog
 header-img: img/JCQ_0073_00001.jpg
 email: mcoder2014@sina.com
-description: "正在慢慢成长的程序员"
-keyword: "姜茶 超群 博客 blog ios app android DL DeepLearning Ml MachineLearning"
+description: "有理想的程序员"
+keyword: "姜茶 超群 博客 blog app android DL Deep Learning Ml Machine Learning"
 url: "http://mcoder2014.github.io"          # your host, for absolute URL
 baseurl: ""                                 # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/mcoder2014/mcoder2014.github.io" # you code repository
 
 # Sidebar settings
 sidebar: true                               # whether or not using Sidebar.
-sidebar-about-description: "同时是一个失去了梦想的摄影师"
+sidebar-about-description: "同时喜爱摄影"
 sidebar-avatar: /img/about.png    # use absolute URL, seeing it's used in both `/` and `/about/`
 sidebar-weixin: /img/qrcode_for_gh_a5dae253d93f_344.jpg    # weixin-public
 
@@ -25,6 +25,7 @@ github_username:    mcoder2014
 #jianshu_username:   e71990ada2fd
 #twitter_username:   qiubaiying
 csdn_username: jcq521045349
+
 
 
 
