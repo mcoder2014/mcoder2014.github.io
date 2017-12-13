@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      在 Windows 下运行 ubuntu
-subtitle:   无需虚拟街，直接运行 linux 子系统
+subtitle:   无需虚拟机，直接运行 linux 子系统
 date:       2017-12-13
 author:     Mcoder
 header-img: img/JCQ_0019_00001.jpg
@@ -15,7 +15,7 @@ tags:
 
 早在 win10 刚出的时候就流传着 win10 可以直接运行 linux 程序的传言，顿时让人觉得吊炸天，Win10 逆袭。 然而，win10 真正出来后，这个功能被推迟了，直到最近才真正的大范围推出。
 
-![](../post_img/201712/在win上运行linux.jpg)
+![](/post_img/201712/在win上运行linux.jpg)
 
 win10 下的 linux 子系统并没有图形界面，只是一个黑框框，有期待使用 linux 图形界面的可能要失望了，这个版本应该更针对于专业的计算机人员。
 
@@ -39,8 +39,8 @@ Linux 学习成本比 windows、MacOs 高很多，你需要熟悉很多很多的
 首先确定自己的系统版本是否满足要求。
 
 根据微软应用商店里的描述，需要是 16215.0 以上的系统版本。而据我的测试，1703版本是不支持的，而最新的1709版本支持。你可以使用`Win + R`，调出运行窗口，然后键入 `cmd` 确定，打开命令行窗口，这里能够看到版本信息。
-![](../post_img/201712/在win上运行linux系统要求.jpg)
-![](../post_img/201712/在win上运行linux自己系统版本.jpg)
+![](/post_img/201712/在win上运行linux系统要求.jpg)
+![](/post_img/201712/在win上运行linux自己系统版本.jpg)
 
 如果自己的系统不满足要求，可能需要更新系统，要么等待微软的推送，要么手动更新。这里我只给大家一个提示，使用 [ Win10更新助手 ](https://support.microsoft.com/zh-cn/help/3159635/windows-10-update-assistant) [ 下载地址 ](https://www.microsoft.com/zh-cn/software-download//windows10) 可以手动更新到最新版本，并且可以下载最新的系统镜像文件，想要制作系统盘的同学也可以试一试。
 
@@ -50,11 +50,11 @@ Linux 学习成本比 windows、MacOs 高很多，你需要熟悉很多很多的
 
 在真正可以用之前，我们需要启用 WSL功能(Windows subSystem Linux)，这里我们使用搜索功能，搜索 `启用或关闭Windows功能`， 然后找到最下面`适用于 Linux 的 Windows 子系统`，将其勾选，然后可能需要重新启动。
 
-![](../post_img/201712/在win上运行linux_windows功能.jpg)
+![](/post_img/201712/在win上运行linux_windows功能.jpg)
 
 当这一步做好了后，我们打开win10 的应用商店，在里面搜索 `linux`，然后会有 `在 Windows 上运行 Linux` 专题。我们打开专题选择自己需要的系统即可像安装一般 win10 应用一样的安装这个子系统。
 
-![](../post_img/201712/在win上运行linux_ubuntu.jpg)
+![](/post_img/201712/在win上运行linux_ubuntu.jpg)
 
 # 安装完成
 
@@ -63,6 +63,6 @@ Linux 学习成本比 windows、MacOs 高很多，你需要熟悉很多很多的
 ## Tips
 - 子系统是直接的root账号，没有密码。
 - ubuntu 系统中可以访问到 win 的硬盘，路径是 `/mnt/盘符` 例如：D盘的路径是 `/mnt/d`。
-    ![](../post_img/201712/在win上运行linux_盘符.jpg)
+    ![](/post_img/201712/在win上运行linux_盘符.jpg)
 - htop 非常好用，可以使用 `apt-get install htop` 进行安装，可以查看到 linux 运行了多少程序，并且可以管理进程，非常方便
-    ![](../post_img/201712/在win上运行linux_htop.jpg)
+    ![](/post_img/201712/在win上运行linux_htop.jpg)
