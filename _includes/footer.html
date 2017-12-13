@@ -227,7 +227,7 @@
 {% endif %}
 
 
-<!-- Baidu Tongji -->
+<!-- Baidu 统计 -->
 {% if site.ba_track_id %}
 <script>
     // dynamic User by Hux
@@ -244,6 +244,22 @@
 </script>
 {% endif %}
 
+<!-- 自动向百度推送页面 -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!-- 自动向百度推送页面 -->
 
 
 <!-- Side Catalog -->
@@ -292,21 +308,6 @@
     });
 </script>
 
-<!-- 自动向百度推送页面 -->
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-<!-- 自动向百度推送页面 -->
+
 
 {% endif %}
