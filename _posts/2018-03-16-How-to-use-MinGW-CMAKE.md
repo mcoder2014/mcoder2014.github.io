@@ -7,7 +7,8 @@ author:     Mcoder
 header-img: img/JCQ_0117_00001.jpg
 catalog: true
 tags:
-  - 阿里云
+  - 环境配置
+  - Linux
 ---
 
 很多 linux 和 windows 平台通用的第三方库喜欢使用 CMAKE 来管理整个工程文件，当我们需要编译安装该库时，在 linux 上往往非常简单。
