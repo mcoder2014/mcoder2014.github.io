@@ -82,18 +82,18 @@ int main(int argc, char *argv[])
 
 如果你使用了C++ 11 标准的编译器，那么你还可以用下面的写法来做。
 ```C++
-      parser.addOptions({
+      parser.addOptions(  {
           // A boolean option with a single name (-p)
           {"p",
-              QCoreApplication::translate("main", "Show progress during copy")},
+              QCoreApplication::translate("main", "Show progress during copy")  },
           // A boolean option with multiple names (-f, --force)
-          {{"f", "force"},
-              QCoreApplication::translate("main", "Overwrite existing files.")},
+          {  {"f", "force"},
+              QCoreApplication::translate("main", "Overwrite existing files.")  },
           // An option with a value
-          {{"t", "target-directory"},
+          {  {"t", "target-directory"},
               QCoreApplication::translate("main", "Copy all source files into <directory>."),
-              QCoreApplication::translate("main", "directory")},
-      });
+              QCoreApplication::translate("main", "directory")  },
+      }  );
 ```
 
 
