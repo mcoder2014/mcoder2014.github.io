@@ -3,7 +3,7 @@ title: 姜茶.Blog
 SEOTitle: 姜茶的博客 | Mcoder's Blog
 header-img: img/JCQ_0073_00001.jpg
 email: mcoder2014@sina.com
-description: "有理想的程序员"
+description: "一个涉猎广泛的程序员"
 keyword: "姜茶 超群 博客 blog app android DL Deep Learning Ml Machine Learning"
 url: "http://mcoder2014.github.io"          # your host, for absolute URL
 baseurl: ""                                 # for example, '/blog' if your blog hosted on 'host/blog'
@@ -11,10 +11,9 @@ github_repo: "https://github.com/mcoder2014/mcoder2014.github.io" # you code rep
 
 # Sidebar settings
 sidebar: true                               # whether or not using Sidebar.
-sidebar-about-description: "同时喜爱摄影"
+sidebar-about-description: "在热爱编程技术的同时还热爱摄影"
 sidebar-avatar: /img/about.png    # use absolute URL, seeing it's used in both `/` and `/about/`
-sidebar-weixin: /img/qrcode_for_gh_a5dae253d93f_344.jpg    # weixin-public
-
+sidebar-weixin: /img/qrcode_for_gh_a5dae253d93f_344.jpg    # 微信公众号二维码
 
 # SNS settings
 RSS: false
@@ -27,8 +26,6 @@ github_username:    mcoder2014
 csdn_username: jcq521045349
 lofter_url: "http://jiangcha219.lofter.com/"
 
-
-
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 permalink: pretty
@@ -36,13 +33,9 @@ paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-
-
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
 gems: [jekyll-paginate]
-
-
 
 # Markdown settings
 # replace redcarpet to kramdown,
@@ -51,19 +44,14 @@ gems: [jekyll-paginate]
 markdown: kramdown
 highlighter: rouge
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
-
-
+  input: GFM    # use Github Flavored Markdown !important
 
 # 评论系统
 # Disqus settings（https://disqus.com/）
 disqus_username: mcoder
-
-# 多说 将于2017年6月1日正式关停服务，建议使用 Disqus（http://dev.duoshuo.com/threads/58d1169ae293b89a20c57241）
-
+# Disqus 在中国大陆被墙，之后抽空换成 畅言
 
 # 站点访问量统计
-#
 # Analytics settings
 # Baidu Analytics
 ba_track_id: 23c9c7470baf51801b58cc4e1d35cab7
@@ -76,14 +64,11 @@ ga_domain: auto
 featured-tags: true                     # 是否使用首页标签
 featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
 
-
-
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
-
-# Friends
+# 友情链接
 friends: [
     {
         title: "CG-HHU",
@@ -96,17 +81,10 @@ friends: [
     {
         title: "Userful Tools",
         href: "http://notes.cghhu.cn/"
-    }
-#   ,{
-#        title: "简书·BY",
-#        href: "http://www.jianshu.com/u/e71990ada2fd"
-#    },{
-#        title: "Apple",
-#        href: "https://apple.com"
-#    },{
-#        title: "Apple Developer",
-#        href: "https://developer.apple.com/"
-#    }
-]
+    },
+    {
+        title: "MemoryC 游戏蛮牛",
+        href: "http://www.manew.com/home.php?mod=space&uid=175038&do=thread&view=me&from=space"
+    }]
 
 theme: jekyll-theme-minimal
