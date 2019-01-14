@@ -83,9 +83,11 @@ layout: default
 
                 {% if site.disqus_username %}
                 <!-- disqus 评论框 start -->
+                <!--
                 <div class="comment">
                     <div id="disqus_thread" class="disqus-thread"></div>
                 </div>
+              -->
                 <!-- disqus 评论框 end -->
                 {% endif %}
 
@@ -115,6 +117,7 @@ layout: default
                 sidebar-container">
 
                 <!-- Featured Tags -->
+                <!--
                 {% if site.featured-tags %}
                 <section>
                     <hr class="hidden-sm hidden-xs">
@@ -130,6 +133,7 @@ layout: default
         			</div>
                 </section>
                 {% endif %}
+              -->
 
                 <!-- Friends Blog -->
                 {% if site.friends %}
@@ -148,6 +152,7 @@ layout: default
 
 {% if site.disqus_username %}
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
+<!--
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "{{site.disqus_username}}";
@@ -160,6 +165,7 @@ layout: default
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
 </script>
+-->
 <!-- disqus 公共JS代码 end -->
 {% endif %}
 
