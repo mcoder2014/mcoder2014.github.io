@@ -94,4 +94,4 @@ pre_info.json
 5. [鸟哥的linux私房菜-关于GNU计划、自由软件与开放源代码](http://linux.vbird.org/linux_basic/0110whatislinux.php#whatislinux_gnu)
 6. [如何选择开源许可证？-阮一峰](http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
 7. [开源许可证教程 -阮一峰](http://www.ruanyifeng.com/blog/2017/10/open-source-license-tutorial.html)
-8.[为什么GPL是更好的开源许可证? -阮一峰](http://www.ruanyifeng.com/blog/2010/02/why_gpl_is_a_better_choice.html)
+8. [为什么GPL是更好的开源许可证? -阮一峰](http://www.ruanyifeng.com/blog/2010/02/why_gpl_is_a_better_choice.html)
