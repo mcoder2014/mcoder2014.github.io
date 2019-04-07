@@ -12,10 +12,16 @@ tags:
   - Digital watermarking
 ---
 
+
 # 前言
 
 虽然我还是个技术糟糕的咸鱼摄影，但也该考虑自己牛逼了以后的事，不如趁早做个个人专属水印`(臭不要脸)`。
 所以这里写个博客给自己立个FLAG，鼓励自己早日把这个FLAG拆掉！
+
+*****************
+
+![GitHub stars](https://img.shields.io/github/stars/mcoder2014/digital_watermarking.svg?style=social)
+
 
 ## 目标
 
