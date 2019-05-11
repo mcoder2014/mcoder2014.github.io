@@ -206,6 +206,18 @@ int main()
 }
 ```
 
+## 函数返回值后置
+可以通过这种写法，将函数的返回值申明放在函数声明的最后；`auto function_name( 形参 ) (属性，如 override等) (异常说明，可选) -> 返回值类型`。
+老实说，这种写法让我觉得自己写的不是C++，估计大部分情况我不回去使用这个特性吧。。。
+
+```C++
+// 返回指向 f0 的指针的函数
+auto fp11() -> void(*)(const std::string&)
+{
+    return f0;
+}
+```
+
 ## 强制类型转换
 C++11起已经不建议使用C语言样式的强制类型转换，推荐使用`static_cast、const_cast、reinterpret_cast、dynamic_cast`等方法的类型转换。
 
@@ -312,7 +324,7 @@ public:
 声明某一个虚函数不得被覆盖。
 
 ## ( )、{ }初始化
-有更多的方法初始化一个对象，实例如下：
+有更多的方法初始化一个对象，比如[花括号初始化列表](https://zh.cppreference.com/w/cpp/language/list_initialization)实例如下：
 
 ```C++
 /*
@@ -414,9 +426,54 @@ auto c3 = Color::white;           // also fine (and in accord
 
 
 ## 基于范围的for循环
+C++也可以像python语言那样使用基于范围的for循环了，是一个进步吧，集各家之所长。
+基于范围的for循环语法是`for(范围声明:范围表达式)`。其中，范围声明：一个具名变量的声明，其类型是由 范围表达式 所表示的序列的元素的类型，或该类型的引用，通常用 auto 说明符进行自动类型推导；范围表达式：任何可以表示一个合适的序列（数组，或定义了 begin 和 end 成员函数或自由函数的对象，见下文）的表达式，或一个花括号初始化器列表，基本上std中几个常见容器，如：vector、list等都是支持基于范围的for循环的。
+
+```C++
+#include <iostream>
+#include <vector>
+ 
+int main() {
+    std::vector<int> v = {0, 1, 2, 3, 4, 5};
+ 
+    for (const int& i : v) // 以 const 引用访问
+        std::cout << i << ' ';
+    std::cout << '\n';
+ 
+    for (auto i : v) // 以值访问，i 的类型是 int
+        std::cout << i << ' ';
+    std::cout << '\n';
+ 
+    for (auto& i : v) // 以引用访问，i 的类型是 int&
+        std::cout << i << ' ';
+    std::cout << '\n';
+ 
+    for (int n : {0, 1, 2, 3, 4, 5}) // 初始化器可以是花括号初始化器列表
+        std::cout << n << ' ';
+    std::cout << '\n';
+ 
+    int a[] = {0, 1, 2, 3, 4, 5};
+    for (int n : a) // 初始化器可以是数组
+        std::cout << n << ' ';
+    std::cout << '\n';
+ 
+    for (int n : a)  
+        std::cout << 1 << ' '; // 不必使用循环变量
+    std::cout << '\n';
+ 
+}
+```
 
 # lambda 表达式
-
+lambda 表达式即是无名函数，很像java中的临时函数（集各家之所长，比各家难用……）
+lambda的语法如下：
+```C++
+[ 俘获 ] <模板形参>(可选)(C++20) ( 形参 ) 说明符(可选) 异常说明 attr -> ret requires(可选)(C++20) { 函数体 }	
+[ 俘获 ] ( 形参 ) -> ret { 函数体 }	
+[ 俘获 ] ( 形参 ) { 函数体 }	
+[ 俘获 ] { 函数体 }	
+```
+lambda 表达式细节更多，有可能单独写一个博客进行解释说明，如果大家有兴趣的话，可以先看看[zh.cppreference.com](https://zh.cppreference.com/w/cpp/language/lambda)这篇说明。
 
 # Reference
 1. [Effective Modern C++](https://item.jd.com/12348026.html)
@@ -428,3 +485,6 @@ auto c3 = Color::white;           // also fine (and in accord
 7. [cppreference.com nullptr，指针字面量](https://zh.cppreference.com/w/cpp/language/nullptr)
 8. [cppreference.com 特殊成员函数](https://zh.cppreference.com/w/cpp/language/member_functions#.E7.89.B9.E6.AE.8A.E6.88.90.E5.91.98.E5.87.BD.E6.95.B0)
 9. [cppreference.com 弃置函数](https://zh.cppreference.com/w/cpp/language/function#.E5.BC.83.E7.BD.AE.E5.87.BD.E6.95.B0)
+10. [花括号初始化列表](https://zh.cppreference.com/w/cpp/language/list_initialization)
+11. [基于范围的for循环](https://zh.cppreference.com/w/cpp/language/range-for)
+12. [lambda 表达式](https://zh.cppreference.com/w/cpp/language/lambda)
