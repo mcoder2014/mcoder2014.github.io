@@ -36,7 +36,8 @@ tags:
 > For a vertex, all adjacent faces and edges are deleted with the schemes above and the vertex flagged as deleted.
 >
 > The iterators, going across vertices edges and faces will still enumerate all primitives (including deleted ones). Except if you use the skipping iterators, which will skip deleted primitives. The circulators always only enumerate primitives which are not deleted.
-# 想关算法
+
+# 相关算法
 
 ## OpenMesh 的迭代器
 
