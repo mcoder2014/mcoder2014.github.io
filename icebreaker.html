@@ -7,6 +7,7 @@ header-img: "img/page_header.jpg"
 
 <!-- 这里绘制掷骰子结果 -->
 <div class="container-fluid page-header">
+    <h1>敲冰块:<strong id = "round">配合实体道具使用!</strong></h1>
     <h1>请敲掉：<strong></strong><strong id = "result">点击开始</strong></h1>
     <!-- Standard button -->
     <button type="button" class="btn btn-default btn-lg center-block" onclick="getRandom();">开始</button>
@@ -40,6 +41,9 @@ header-img: "img/page_header.jpg"
         index ++;   // index + 1
 
         var element_result = document.getElementById("result");
+        var element_round = document.getElementById("round");
+        element_round.textContent = "第" + index + "次";
+
         switch(result)
         {
             case 0:
@@ -93,6 +97,8 @@ header-img: "img/page_header.jpg"
         // Reset the result UI
         var element_result = document.getElementById("result");
         element_result.textContent = "点击开始";
+        var element_round = document.getElementById("round");
+        element_round.textContent = "配合实体道具使用!";
 
         // Clean the table body
         var element_table = document.getElementById("record");
