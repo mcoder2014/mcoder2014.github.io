@@ -5,9 +5,9 @@ header-img: img/header.jpg
 email: mcoder2014@sina.com
 description: "一个涉猎广泛的程序员"
 keyword: "姜茶 超群 博客 blog app android DL Deep Learning Ml Machine Learning"
-url: "http://mcoder2014.github.io"          # your host, for absolute URL
+url: "https://mcoder2014.github.io/"          # your host, for absolute URL
 baseurl: ""                                 # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/mcoder2014/mcoder2014.github.io" # you code repository
+github_repo: "https://github.com/mcoder2014" # you code repository
 
 # Sidebar settings
 sidebar: true                               # whether or not using Sidebar.
@@ -24,7 +24,7 @@ github_username:    mcoder2014
 #jianshu_username:   e71990ada2fd
 #twitter_username:   qiubaiying
 csdn_username: jcq521045349
-lofter_url: "http://jiangcha219.lofter.com/"
+lofter_url: "https://jiangcha219.lofter.com/"
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -45,11 +45,6 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM    # use Github Flavored Markdown !important
-
-# 评论系统
-# Disqus settings（https://disqus.com/）
-# disqus_username: mcoder
-# Disqus 在中国大陆被墙，之后抽空换成 畅言
 
 # 站点访问量统计
 # Analytics settings
@@ -72,12 +67,12 @@ service-worker: true
 friends: [
     {
         title: "CG-HHU",
-        href: "https://cghhu.cn"
+        href: "https://cghhu.cn/"
     },
-    # {
-    #    title: "非池中物" ,
-    #    href: "https://feichizhongwu.github.io"
-    #},
+    {
+        title: "LLJ-STAR",
+        href: "https://lljstar.cn/"
+    },
     {
         title: "Userful Tools",
         href: "http://notes.cghhu.cn/"
