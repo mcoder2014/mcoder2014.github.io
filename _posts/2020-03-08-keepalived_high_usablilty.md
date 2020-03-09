@@ -2,7 +2,7 @@
 layout:     post
 title:      "双机热备份"
 subtitle:   "如何通过 keepalived 实现双机热备份"
-date:       2020-03-07
+date:       2020-03-08
 author:     Mcoder
 header-img: img/page_header.jpg
 catalog: true
