@@ -27,15 +27,19 @@ csdn_username: jcq521045349
 lofter_url: "https://jiangcha219.lofter.com/"
 
 # Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+# if you want to customize anchor.
+anchorjs: true                          
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
 gems: [jekyll-paginate]
+
+# compare with jekylll 4.0
+plugins: [jekyll-paginate]
 
 # Markdown settings
 # replace redcarpet to kramdown,
