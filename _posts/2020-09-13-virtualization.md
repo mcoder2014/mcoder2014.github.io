@@ -37,7 +37,7 @@ tags:
 
 当我们在阿里云的 ECS 中查看机器的 PCI 设备时，可以发现部分设备的描述为`Red Hat, Inc. Virtio network device`，这便是使用功能 libvirt 虚拟化了网卡、块存储等硬件设备。
 
-···shell
+```shell
 Last login: Sun Sep 13 16:12:24 2020 from xxx.xxx.xxx.xxx
 aliyun@localhost:~$ lspci
 00:00.0 Host bridge: Intel Corporation 440FX - 82441FX PMC [Natoma] (rev 02)
@@ -50,4 +50,4 @@ aliyun@localhost:~$ lspci
 00:04.0 Communication controller: Red Hat, Inc. Virtio console
 00:05.0 SCSI storage controller: Red Hat, Inc. Virtio block device
 00:06.0 Unclassified device [00ff]: Red Hat, Inc. Virtio memory balloon
-···
+```
