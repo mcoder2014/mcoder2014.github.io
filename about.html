@@ -1,104 +1,71 @@
 ---
 layout: page
 title: "About"
-description: "Hey, this is Mcoder CQ."
-header-img: "img/flower.jpg"
+description: "Hello，各位好，这里是 Mcoder CQ"
+header-img: "img/page_header.jpg"
 ---
 
-<!-- Language Selector -->
-<select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> 中文 Chinese </option>
-    <option value="1"> 英文 English </option>
-</select>
 
-<!-- Chinese Version -->
-<div class="zh post-container">
+<h1 id="技能情况">技能情况</h1>
 
-    <!--copied from markdown -->
-    <blockquote><p>多看书，多做事，少摸鱼！<br>
-    敲代码，敲代码，改bug！</p></blockquote>
+<ol>
+    <li>熟悉 C++、Java，有 python 使用经验；</li>
+    <li>掌握常见的数据结构及基础算法；</li>
+    <li>掌握计算机网络、计算机操作系统、计算机组成原理等基础；</li>
+    <li>有 MySQL、Redis 使用经验；</li>
+    <li>有些许的图形相关算法实现经验。</li>
+</ol>
 
-    <p>Hi，我是<strong>姜茶</strong>，在不远的将来我会成为一个程序员，目前正在河海大学读书。</p>
+<h1 id="实习经历">实习经历</h1>
 
-    <p>这是我的利用 <a href="https://pages.github.com/">GitHub Pages</a> 与
-      <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的 个人博客。
-      我在GitHub主页<a href="https://github.com/mcoder2014">👉Mcoder2014</a>。</p>
+<h2 id="字节跳动">字节跳动</h2>
 
-    <p>我喜欢摄影、动漫，在新浪微博上是个小透明，也喜欢自己探索写新奇古怪的东西。</p>
+<ul>
+    <li>时间： 2020.02 - 2020.06</li>
+    <li>主要工作：
+        <ul>
+            <li>参与IoT云平台基础功能研发，该平台作用于房产部门的智慧园区项目，联通园区IoT设备与云端微服务。</li>
+            <li>IoT消息路由功能研发，实现MQTT数据与微服务消息队列消息路由模块原型，单节点吞吐量每秒5万条。</li>
+            <li>IoT物模型功能研发，参加物模型存储、物模型通信、在线调试、虚拟设备等工作。</li>
+        </ul>
+    </li>
+</ul>
 
-    <p>我的Email:mcoder2014@sina.com ，希望可以和各位大神多多交流。</p>
+<h2 id="中科院深圳先研院">中科院深圳先研院</h2>
 
-</div>
+<ul>
+    <li>时间： 2018.03 - 2018.09</li>
+    <li>主要工作：
+        <ul>
+            <li>参与医学图像中心的深圳市基础研究学科项目面神经功能评估与康复训练机制研究；</li>
+            <li>使用Dlib人脸识别和Eos人脸建模框架实现眉上缘、眼周、脸颊、鼻翼等7个区域分割，准确率90%以上；</li>
+            <li>使用机器学习方法输入患者面部7区域血流值对面瘫病情进行分类，分类准确率97.14%。</li>
+        </ul>
+    </li>
+</ul>
 
-<!-- English Version -->
-<div class="en post-container">
-    <p>Are you kidding me?</P>
-    <p>我英语那么差怎么会真的写一个英文自我简介呢，逗你玩呢！</p>
-</div>
+<h1 id="项目经验">项目经验</h1>
 
-<!-- Handle Language Change -->
-<script type="text/javascript">
-    // get nodes
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
+<h2 id="个性化3d打印鞋垫定制系统">个性化3D打印鞋垫定制系统</h2>
 
-    // bind hashchange event
-    window.addEventListener('hashchange', _render);
+<ul>
+    <li>项目简介：该系统用于定制贴合脚掌的镂空晶格结构鞋垫模型，并可遵医嘱对模型局部微调，定制鞋垫具有透气、美观、受力均匀、重量轻等特点；</li>
+    <li>主要工作：基于Qt框架、OpenMesh几何库构建、生成基于三周期极小曲面的多孔结构；使用有限元分析模型分析受力情况，调整鞋垫结构局部支撑性能、优化足底压力分布；</li>
+    <li>项目成果：发明专利受理</li>
+</ul>
 
-    // handle render
-    function _render(){
-        var _hash = window.location.hash;
-        // en
-        if(_hash == "#en"){
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }
-    }
+<h2 id="ofd版式文档编辑器">OFD版式文档编辑器</h2>
 
-    // handle select change
-    function onLanChange(index){
-        if(index == 0){
-            window.location.hash = "#zh"
-        }else{
-            window.location.hash = "#en"
-        }
-    }
+<ul>
+    <li>项目简介：编辑器是支持国产Linux操作系统的国家标准OFD版式文档办公软件；</li>
+    <li>主要工作：基于Qt框架开发，完成需求分析、系统设计和大部分编码工作，系统中使用了单例、命令、代理等设计模式；实现了基本交互功能及文本编辑、查找替换、图片插入、撤销重做等编辑功能。</li>
+    <li>项目成果：第六届中软杯全国三等奖</li>
+</ul>
 
-    // init
-    _render();
-</script>
+<h2 id="webgl-虚拟试衣系统">WebGL 虚拟试衣系统</h2>
 
-
-
-{% if site.disqus_username %}
-<!-- disqus 评论框 start -->
-<div class="comment">
-    <div id="disqus_thread" class="disqus-thread">
-
-    </div>
-</div>
-<!-- disqus 评论框 end -->
-
-<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "{{site.disqus_username}}";
-    var disqus_identifier = "{{site.disqus_username}}/{{page.url}}";
-    var disqus_url = "{{site.url}}{{page.url}}";
-
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<!-- disqus 公共JS代码 end -->
-{% endif %}
+<ul>
+    <li>项目简介：本系统是响应式布局的网页端三维虚拟试衣系统；</li>
+    <li>主要工作：前端及webGL，基于three.js实现模特体型调整、服饰更换、模特动态动作等功能。</li>
+    <li>项目成果：发明专利受理、中软杯全国二等奖</li>
+</ul>
