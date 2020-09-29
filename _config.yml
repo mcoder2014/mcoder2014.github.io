@@ -39,7 +39,7 @@ anchorjs: true
 gems: [jekyll-paginate]
 
 # compare with jekylll 4.0
-plugins: [jekyll-paginate]
+plugins_dir: [jekyll-paginate]
 
 # Markdown settings
 # replace redcarpet to kramdown,
