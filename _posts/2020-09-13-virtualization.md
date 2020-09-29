@@ -51,3 +51,7 @@ aliyun@localhost:~$ lspci
 00:05.0 SCSI storage controller: Red Hat, Inc. Virtio block device
 00:06.0 Unclassified device [00ff]: Red Hat, Inc. Virtio memory balloon
 ```
+
+## Reference
+
+1. [KVM实战：原理、进阶与性能调优](https://item.jd.com/12558300.html)
