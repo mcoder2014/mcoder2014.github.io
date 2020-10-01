@@ -52,6 +52,12 @@ aliyun@localhost:~$ lspci
 00:06.0 Unclassified device [00ff]: Red Hat, Inc. Virtio memory balloon
 ```
 
+在 QEMU/KVM 中，客户机可以使用的设备大致分为三种类型：
+
+1. 模拟设备(Emulated device)：QEMU 通过纯软件方法模拟的设备，如 QEMU 的经典模拟网卡 e1000、rtl8139；
+2. 半虚拟化设备(virtio device)： 实现 VIRTIO API 的半虚拟化驱动设备；
+3. 设备直接分配(VT-d)：即硬件穿透。
+
 ## Reference
 
 1. [KVM实战：原理、进阶与性能调优](https://item.jd.com/12558300.html)
