@@ -125,7 +125,7 @@
                         frameborder="0" scrolling="0" width="100px" height="20px"
                         src="https://ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_username }}.github.io&type=star&count=true" >
                     </iframe><br>
-                    <span id="busuanzi_container_site_pv">本站总访客数<span id="busuanzi_value_site_uv"></span>人</span>
+                    <span id="busuanzi_container_site_pv">本站总访客<span id="busuanzi_value_site_uv"></span>人</span>
                 </p>
             </div>
         </div>
@@ -209,24 +209,6 @@
 </script>
 {% endif %}
 
-
-<!-- Baidu 统计 -->
-{% if site.ba_track_id %}
-<script>
-    // dynamic User by Hux
-    var _baId = '{{ site.ba_track_id }}';
-
-    // Originial
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?" + _baId;
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-{% endif %}
-
 <!-- 自动向百度推送页面 -->
 <script>
 (function(){
@@ -243,7 +225,6 @@
 })();
 </script>
 <!-- 自动向百度推送页面 -->
-
 
 <!-- Side Catalog -->
 {% if page.catalog %}

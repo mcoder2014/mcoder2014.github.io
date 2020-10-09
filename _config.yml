@@ -51,10 +51,6 @@ kramdown:
   input: GFM    # use Github Flavored Markdown !important
 
 # 站点访问量统计
-# Analytics settings
-# Baidu Analytics
-ba_track_id: 23c9c7470baf51801b58cc4e1d35cab7
-
 # Google Analytics
 ga_track_id: 'UA-110491207-1'            # Format: UA-xxxxxx-xx
 ga_domain: auto
@@ -80,10 +76,6 @@ friends: [
     {
         title: "Userful Tools",
         href: "http://notes.cghhu.cn/"
-    },
-    {
-        title: "MemoryC 游戏蛮牛",
-        href: "http://www.manew.com/home.php?mod=space&uid=175038&do=thread&view=me&from=space"
     }]
 
 theme: jekyll-theme-minimal
