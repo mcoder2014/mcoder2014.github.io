@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "linux 定时任务"
-subtitle:   "校园网自动登录"
+title:      "树莓派自动登入校园网"
+subtitle:   "linux 定时任务"
 date:       2020-11-16
 author:     Mcoder
 header-img: img/page_header.jpg

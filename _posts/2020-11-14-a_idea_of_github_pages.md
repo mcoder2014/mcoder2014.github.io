@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "一种实现 github pages 的思路"
-subtitle:   "基于 nginx 反向代理"
+title:      "如何使用 nginx 实现 github pages"
+subtitle:   "基于 nginx 的 github pages 实现思路"
 date:       2020-11-14
 author:     Mcoder
 header-img: img/page_header.jpg
