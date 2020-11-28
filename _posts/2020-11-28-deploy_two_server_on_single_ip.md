@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "在树莓派上部署多个帮助文档网站"
+title:      "在树莓派上部署多个帮助文档镜像"
 subtitle:   "讨论如何在同一个ip下部署多个网站"
 date:       2020-11-28
 author:     Mcoder
