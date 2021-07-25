@@ -1,6 +1,9 @@
 
 # Created by https://www.gitignore.io/api/macos
 
+# jekyll
+.jekyll-cache/
+
 ### macOS ###
 *.DS_Store
 .AppleDouble
